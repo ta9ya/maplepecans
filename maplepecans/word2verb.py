@@ -32,7 +32,7 @@ class HomonymWord:
 
 		verb_list = [value for key, value in self.verbs.items() if key.find(text) >= 0]
 
-		output_sen = word + self.postpositionals[0] + random.choice(verb_list) if len(verb_list) > 0 else 'no text'
+		output_sen = word + self.postpositionals[0] + random.choice(verb_list) if len(verb_list) > 0 else ''
 
 		return output_sen
 

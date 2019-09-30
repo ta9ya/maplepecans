@@ -10,3 +10,6 @@ class TestHomonymWord(unittest.TestCase):
 
 	def setUp(self) -> None:
 		self.obj = HomonymWord()
+
+	def test_word2verb(self):
+		self.assertGreater(self.obj.word2verb())
